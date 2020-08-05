@@ -1,0 +1,62 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+$header-border: #e0e0e0 !default;
+
+.site-header {
+  position: relative;
+  padding: rem-calc(5 0);
+  border-bottom: 1px solid $header-border;
+  background-color: $white;
+
+  .site-title {
+    margin-bottom: 0;
+    padding: rem-calc(0 10);
+    background-color: $body-font-color;
+    font-size: rem-calc(21);
+    font-weight: 700;
+    line-height: 2.6;
+    color: $white;
+    text-transform: uppercase;
+
+    @include breakpoint(medium up) {
+      line-height: 1.8;
+    }
+
+    & > a {
+      color: $header-color;
+    }
+  }
+
+  .site-description {
+    display: none;
+  }
+}
+
+.wp-custom-logo {
+  .site-title {
+    display: none;
+  }
+
+  .custom-logo-link {
+    display: block;
+  }
+
+  .custom-logo {
+    max-width: 42px;
+    height: auto;
+    margin-right: rem-calc(24);
+
+    @include breakpoint(medium up) {
+      max-width: 30px;
+    }
+  }
+}
+
+.off-canvas-toggle.clear.button {
+  color: $header-color;
+
+  @include on-event() {
+    opacity: 0.6;
+  }
+}

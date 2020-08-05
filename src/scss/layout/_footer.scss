@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.site-footer {
+  padding-top: rem-calc(30);
+  padding-bottom: rem-calc(30);
+  background: #2a2a2a;
+  color: $white;
+
+  .site-title {
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    & > a {
+      color: $white;
+    }
+  }
+
+  .copyright {
+    margin: 0;
+    font-size: rem-calc(10);
+    color: #bababa;
+  }
+
+  .social-navigation .menu > li > a {
+    color: $white;
+    font-size: rem-calc(20);
+  }
+}

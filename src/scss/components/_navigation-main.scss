@@ -1,0 +1,48 @@
+$main-link-color: #2a2a2a !default;
+
+.main-navigation {
+  .dropdown.menu {
+    a {
+      font-size: rem-calc(15);
+      font-weight: 700;
+      color: $main-link-color;
+
+      @include on-event() {
+        color: $anchor-color;
+      }
+    }
+
+    & > li.is-active {
+      & > a {
+        color: $main-link-color;
+      }
+    }
+  }
+
+  .submenu {
+    a {
+      font-size: rem-calc(13);
+    }
+
+    .is-active {
+      & > a {
+        background: $header-border;
+      }
+    }
+  }
+}
+
+.off-canvas {
+  .menu {
+    a {
+      font-size: rem-calc(20);
+      font-weight: 700;
+      line-height: 1.8;
+      color: $white;
+
+      @include on-event() {
+        opacity: 0.6;
+      }
+    }
+  }
+}

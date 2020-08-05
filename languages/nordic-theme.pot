@@ -1,0 +1,280 @@
+# Copyright (C) 2020 gcode-theme
+# This file is distributed under the same license as the gcode-theme package.
+msgid ""
+msgstr ""
+"Project-Id-Version: gcode-theme\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:22
+msgid "The page you are looking for does not exist. It may have been moved, or removed altogether. Perhaps you can return back to the site's homepage and see if you can find what you are looking for."
+msgstr ""
+
+#: 404.php:24
+msgid "Back Home"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:39
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:33
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:25
+msgid "Copyright &copy; %s. All rights reserved."
+msgstr ""
+
+#: footer.php:32, classes/class-theme-setup.php:21
+msgid "Footer Menu"
+msgstr ""
+
+#: header.php:55
+msgid "Main navigation toggle"
+msgstr ""
+
+#: header.php:79
+msgid "Social Links Menu"
+msgstr ""
+
+#: index.php:29
+msgid "Search:"
+msgstr ""
+
+#: index.php:45
+msgid "We could not find any results for your search. You can give it another try through the search form below."
+msgstr ""
+
+#: index.php:36
+msgid "We found %s result for your search."
+msgid_plural "We found %s results for your search."
+msgstr[0] ""
+msgstr[1] ""
+
+#: index.php:109
+msgid "search again"
+msgstr ""
+
+#: index.php:73
+msgid "Articles"
+msgstr ""
+
+#: searchform.php:20
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:21
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:23
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: classes/class-customizer.php:35
+msgid "Text Color"
+msgstr ""
+
+#: classes/class-customizer.php:36
+msgid "Select the color to be used for the body text color."
+msgstr ""
+
+#: classes/class-customizer.php:58
+msgid "Header Background"
+msgstr ""
+
+#: classes/class-customizer.php:59
+msgid "Select the background color to be used for the header."
+msgstr ""
+
+#: classes/class-customizer.php:81
+msgid "Header Color"
+msgstr ""
+
+#: classes/class-customizer.php:82
+msgid "Select the color to be used for the header menu items."
+msgstr ""
+
+#: classes/class-customizer.php:104
+msgid "Anchor Color"
+msgstr ""
+
+#: classes/class-customizer.php:105
+msgid "Select the color to be used for hyperlink color."
+msgstr ""
+
+#: classes/class-customizer.php:127
+msgid "Anchor Hover Color"
+msgstr ""
+
+#: classes/class-customizer.php:128
+msgid "Select the color to be used for hyperlink hover color."
+msgstr ""
+
+#: classes/class-customizer.php:137
+msgid "Theme Options"
+msgstr ""
+
+#: classes/class-customizer.php:155
+msgid "Force Login"
+msgstr ""
+
+#: classes/class-customizer.php:156
+msgid "Make the website private until it's ready to share publicly, or keep it private for members only."
+msgstr ""
+
+#: classes/class-force-login.php:56
+msgid "You're not authorized to access this site."
+msgstr ""
+
+#: classes/class-force-login.php:56
+msgid "Error"
+msgstr ""
+
+#: classes/class-force-login.php:72
+msgid "Only authenticated users can access the REST API."
+msgstr ""
+
+#. translators: %s: post date.
+#: classes/class-tags.php:19
+msgid "%1$s ago"
+msgstr ""
+
+#: classes/class-tags.php:43
+msgid "By"
+msgstr ""
+
+#: classes/class-tags.php:59
+msgid "Previous"
+msgstr ""
+
+#: classes/class-tags.php:60
+msgid "Next"
+msgstr ""
+
+#: classes/class-tags.php:108
+msgid "First"
+msgstr ""
+
+#: classes/class-tags.php:112
+msgid "previous"
+msgstr ""
+
+#: classes/class-tags.php:118
+msgid "You're on page "
+msgstr ""
+
+#: classes/class-tags.php:128
+msgid "next"
+msgstr ""
+
+#: classes/class-tags.php:133
+msgid "Last"
+msgstr ""
+
+#: classes/class-theme-setup.php:19
+msgid "Primary Menu"
+msgstr ""
+
+#: classes/class-theme-setup.php:20
+msgid "Social Menu"
+msgstr ""
+
+#: classes/class-theme-setup.php:115
+msgid "Primary"
+msgstr ""
+
+#: classes/class-theme-setup.php:120
+msgid "Secondary"
+msgstr ""
+
+#: classes/class-theme-setup.php:138
+msgid "Primary Sidebar"
+msgstr ""
+
+#: classes/class-theme-setup.php:139
+msgid "Add widgets here."
+msgstr ""
+
+#: classes/class-theme-setup.php:150
+msgid "Footer #1"
+msgstr ""
+
+#: classes/class-theme-setup.php:151, classes/class-theme-setup.php:163, classes/class-theme-setup.php:175, classes/class-theme-setup.php:187
+msgid "Widgets in this area will be displayed in the first column in the footer."
+msgstr ""
+
+#: classes/class-theme-setup.php:162
+msgid "Footer #2"
+msgstr ""
+
+#: classes/class-theme-setup.php:174
+msgid "Footer #3"
+msgstr ""
+
+#: classes/class-theme-setup.php:186
+msgid "Footer #4"
+msgstr ""
+
+#: classes/class-theme-setup.php:374
+msgid "Skip to the content"
+msgstr ""
+
+#: template-parts/content.php:23
+msgid "Continue reading"
+msgstr ""
+
+#: template-parts/content.php:29
+msgid "Categories"
+msgstr ""
+
+#: template-parts/content.php:38
+msgid "Page"
+msgstr ""
+
+#: template-parts/content.php:38
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:53
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: template-parts/navigation.php:12
+msgid "Post"
+msgstr ""
+
+#: template-parts/off-canvas.php:27
+msgid "Social Links Mobile Menu"
+msgstr ""
+
+#: templates/left-sidebar.php:3
+msgid "Left Sidebar"
+msgstr ""
+
+#: templates/right-sidebar.php:3
+msgid "Right Sidebar"
+msgstr ""

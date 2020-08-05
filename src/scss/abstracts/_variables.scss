@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// Overwrite variables in
+// @link src/scss/vendors/foundation/_settings.scss
+// -----------------------------------------------------------------------------
+
+$body-font-color: #212529;
+
+$foundation-palette: (
+  primary: #fa6831,
+  secondary: #767676,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+
+@include add-foundation-colors;
+
+$anchor-color: $primary-color;
+$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+
+$button-background: $primary-color;
+$button-background-hover: scale-color($button-background, $lightness: -15%);
+
+$dropdownmenu-arrow-color: $body-font-color;
+
+$pagination-item-background-current: $primary-color;

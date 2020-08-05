@@ -1,0 +1,57 @@
+// ------------------------------------------------------------------------------
+// This file contains all styles related to the widgets of the site/application.
+// ------------------------------------------------------------------------------
+.widget {
+  margin-bottom: rem-calc(24);
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
+}
+
+.widget-area {
+  .widget-title {
+    font-size: rem-calc(20);
+    font-weight: 900;
+  }
+}
+
+.widget_recent_entries,
+.widget_categories {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 0;
+      padding: 8px 16px;
+      font-size: rem-calc(14);
+      color: $secondary-color;
+      border-bottom: 1px solid #e5e5e5;
+      border-right: 1px solid #e5e5e5;
+      border-left: 1px solid #e5e5e5;
+
+      &:first-child {
+        border-top: 1px solid #e5e5e5;
+      }
+
+
+      & > a {
+        display: block;
+        padding: 0;
+        color: #2a2a2a;
+
+        @include on-event() {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.widget_categories {
+  .current-cat {
+    font-weight: bold;
+  }
+}

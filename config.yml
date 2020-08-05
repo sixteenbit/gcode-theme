@@ -1,0 +1,47 @@
+# Your project's server will run on localhost:xxxx at this port
+URL: "https://sixteenbit.ddev.site"
+
+# Gulp will reference these paths when it copies files
+PATHS:
+  php:
+    - "./*.php"
+    - "./**/*.php"
+  images:
+    - "src/img/**/*"
+  sass:
+    motionui:
+      - "node_modules/motion-ui/src"
+    foundation:
+      - "node_modules/foundation-sites/scss"
+    fontawesome:
+      - "node_modules/@fortawesome/fontawesome-free/scss"
+  javascript:
+    vendors:
+      - "node_modules/motion-ui/dist/motion-ui.js"
+      - "node_modules/what-input/dist/what-input.js"
+      - "node_modules/foundation-sites/dist/js/foundation.js"
+    custom:
+      - "src/js/**/_*.js"
+  fonts:
+    fontawesome:
+      - "node_modules/@fortawesome/fontawesome-free/webfonts/*"
+
+# Used in the theme .pot file for translation
+POT:
+  domain: 'gcode-theme'
+  package: 'gcode-theme'
+
+# Theme strings used in the `rename` gulp task
+THEME:
+  ## The current strings in the theme
+  CURRENT:
+    name: "GCODE"
+    slug: "gcode-theme"
+    prefix: "gcode_theme_"
+    class: "GT_"
+  ## The strings to rename in the theme
+  NEW:
+    name: "GCODE"
+    slug: "gcode-theme"
+    prefix: "gcode_theme_"
+    class: "GT_"

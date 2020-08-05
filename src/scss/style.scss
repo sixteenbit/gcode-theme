@@ -1,0 +1,50 @@
+/*!
+Theme Name: GCODE
+Theme URI: http://github.com/sixteenbit/gcode-theme
+Author: Sixteenbit
+Author URI: https://sixteenbit.com
+Description: Custom theme: GCODE, developed by Sixteenbit.
+Version: 0.1.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: gcode-theme
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+// 1. Configuration and helpers
+@import 'abstracts/mixins';
+
+// 2. Vendors
+@import 'vendors/foundation/foundation-components';
+
+// 3. Base stuff
+@import 'base/base';
+
+// 4. Layout-related sections
+@import 'layout/site';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/widgets';
+
+// 5. Components
+@import 'components/accessibility';
+@import 'components/alignments';
+@import 'components/comments';
+@import 'components/media';
+@import 'components/navigation-main';
+@import 'components/navigation-social';
+@import 'components/footer-widgets';
+@import 'components/fouc';
+@import 'components/admin-bar';
+@import 'components/custom-colors';
+
+// 6. Page-specific styles
+@import 'pages/home';
+@import 'pages/posts-and-pages';
+@import 'pages/archives';
+
+// 7. Themes
+
