@@ -6,7 +6,7 @@
  */
 
 // Defines
-define( 'GT_THEME_VERSION', '0.1.1' );
+define( 'GT_THEME_VERSION', '0.1.2' );
 define( 'GT_THEME_DIR', get_template_directory() );
 define( 'GT_THEME_URL', get_template_directory_uri() );
 
