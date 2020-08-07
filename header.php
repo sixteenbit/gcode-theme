@@ -13,9 +13,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-	<?php wp_head(); ?>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -29,29 +29,29 @@
 	<header id="masthead" class="site-header sticky" data-sticky data-margin-top="0">
 		<div class="grid-container fluid">
 			<div class="grid-x">
-        <div class="cell small-6 medium-auto">
-          <button class="off-canvas-toggle clear button float-right hide-for-medium margin-bottom-0" data-toggle="off-canvas">
-            <i class="fa fa-bars fa-2x"></i><span class="screen-reader-text"><?php esc_html_e( 'Main navigation toggle', 'gcode-theme' ); ?></span>
-          </button>
+		<div class="cell small-6 medium-auto">
+		  <button class="off-canvas-toggle clear button float-right hide-for-medium margin-bottom-0" data-toggle="off-canvas">
+			<i class="fa fa-bars fa-2x"></i><span class="screen-reader-text"><?php esc_html_e( 'Main navigation toggle', 'gcode-theme' ); ?></span>
+		  </button>
 
-          <?php if ( has_nav_menu( 'primary' ) ) : ?>
-            <nav id="site-navigation" class="main-navigation hide-for-small-only">
-              <?php
-              wp_nav_menu(
-                array(
-                  'container'      => false,
-                  'menu_id'        => 'primary',
-                  'menu_class'     => 'dropdown horizontal menu',
-                  'theme_location' => 'primary',
-                  'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
-                  'walker'         => new GT_Dropdown_Walker(),
-                  'fallback_cb'    => false,
-                )
-              );
-              ?>
-            </nav><!-- #site-navigation -->
-          <?php endif; ?>
-        </div><!-- .cell -->
+		  <?php if ( has_nav_menu( 'primary' ) ) : ?>
+			<nav id="site-navigation" class="main-navigation hide-for-small-only">
+				<?php
+				wp_nav_menu(
+					array(
+						'container'      => false,
+						'menu_id'        => 'primary',
+						'menu_class'     => 'dropdown horizontal menu',
+						'theme_location' => 'primary',
+						'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
+						'walker'         => new GT_Dropdown_Walker(),
+						'fallback_cb'    => false,
+					)
+				);
+				?>
+			</nav><!-- #site-navigation -->
+		  <?php endif; ?>
+		</div><!-- .cell -->
 
 				<div class="cell small-6 medium-shrink">
 					<div class="site-branding text-center">

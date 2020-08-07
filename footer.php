@@ -19,9 +19,9 @@
 	<footer id="colophon" class="site-footer">
 		<div class="grid-container">
 			<div class="grid-x align-stretch">
-        <div class="cell medium-auto align-self-middle">
-          <h6 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h6>
-        </div>
+		<div class="cell medium-auto align-self-middle">
+		  <h6 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h6>
+		</div>
 				<div class="cell medium-shrink align-self-middle">
 					<div class="site-info">
 						<p class="copyright">
@@ -30,24 +30,24 @@
 					</div><!-- .site-info -->
 				</div><!-- .cell -->
 
-        <?php if ( has_nav_menu( 'social' ) ) : ?>
-          <div class="cell medium-auto">
-            <nav class="social-navigation" aria-label="<?php esc_html_e( 'Social Links Menu', 'gcode-theme' ); ?>">
-              <?php
-              wp_nav_menu(
-                array(
-                  'container'      => false,
-                  'theme_location' => 'social',
-                  'menu_class'     => 'social-links-menu menu align-right',
-                  'depth'          => 1,
-                  'link_before'    => '<span class="screen-reader-text">',
-                  'link_after'     => '</span>',
-                )
-              );
-              ?>
-            </nav><!-- .social-navigation -->
-          </div><!-- .cell -->
-        <?php endif; ?>
+		<?php if ( has_nav_menu( 'social' ) ) : ?>
+		  <div class="cell medium-auto">
+			<nav class="social-navigation" aria-label="<?php esc_html_e( 'Social Links Menu', 'gcode-theme' ); ?>">
+			  <?php
+				wp_nav_menu(
+					array(
+						'container'      => false,
+						'theme_location' => 'social',
+						'menu_class'     => 'social-links-menu menu align-right',
+						'depth'          => 1,
+						'link_before'    => '<span class="screen-reader-text">',
+						'link_after'     => '</span>',
+					)
+				);
+				?>
+			</nav><!-- .social-navigation -->
+		  </div><!-- .cell -->
+		<?php endif; ?>
 			</div><!-- .grid-x -->
 		</div><!-- .grid-container -->
 	</footer><!-- #colophon -->

@@ -18,7 +18,7 @@ if ( ! class_exists( 'GT_Customizer' ) ) {
 			$wp_customize->add_setting(
 				'text_color',
 				array(
-					'default'           => '#73757a',
+					'default'           => '#212529',
 					'type'              => 'theme_mod',
 					'capability'        => 'edit_theme_options',
 					'sanitize_callback' => array( __CLASS__, 'sanitize_hex_color' ),
@@ -41,7 +41,7 @@ if ( ! class_exists( 'GT_Customizer' ) ) {
 			$wp_customize->add_setting(
 				'header_background',
 				array(
-					'default'           => '#fefefe',
+					'default'           => '#ffffff',
 					'type'              => 'theme_mod',
 					'capability'        => 'edit_theme_options',
 					'sanitize_callback' => array( __CLASS__, 'sanitize_hex_color' ),
@@ -64,7 +64,7 @@ if ( ! class_exists( 'GT_Customizer' ) ) {
 			$wp_customize->add_setting(
 				'header_color',
 				array(
-					'default'           => '#151922',
+					'default'           => '#212529',
 					'type'              => 'theme_mod',
 					'capability'        => 'edit_theme_options',
 					'sanitize_callback' => array( __CLASS__, 'sanitize_hex_color' ),
@@ -87,7 +87,7 @@ if ( ! class_exists( 'GT_Customizer' ) ) {
 			$wp_customize->add_setting(
 				'anchor_color',
 				array(
-					'default'           => '#4687ff',
+					'default'           => '#fa6831',
 					'type'              => 'theme_mod',
 					'capability'        => 'edit_theme_options',
 					'sanitize_callback' => array( __CLASS__, 'sanitize_hex_color' ),
@@ -110,7 +110,7 @@ if ( ! class_exists( 'GT_Customizer' ) ) {
 			$wp_customize->add_setting(
 				'anchor_hover_color',
 				array(
-					'default'           => '#90b7ff',
+					'default'           => '#f94a08',
 					'type'              => 'theme_mod',
 					'capability'        => 'edit_theme_options',
 					'sanitize_callback' => array( __CLASS__, 'sanitize_hex_color' ),
@@ -209,30 +209,34 @@ if ( ! class_exists( 'GT_Customizer' ) ) {
 			$anchor_hover_color = get_theme_mod( 'anchor_hover_color' );
 			?>
 			<style id="customizer-styles" type="text/css">
-				<?php if ( isset( $text_color ) ) : ?>
+				<?php if ( ! empty( $text_color ) ) : ?>
 				body {
 					color: <?php echo $text_color; ?>;
 				}
-				<?php endif;
+        <?php endif;
 
-				if ( isset( $header_background ) ) : ?>
+				if ( ! empty( $header_background ) ) : ?>
 				.site-header {
 					background-color: <?php echo $header_background; ?>;
 				}
-				<?php endif;
+        <?php	endif;
 
-				if (isset($header_color)) : ?>
-          .site-header,
-          .site-header a,
-          .site-header .menu-toggle,
-          .main-navigation .menu > li > a,
-          .main-navigation .dropdown.menu a,
-          .social-navigation .menu > li > a {
-            color: <?php echo $header_color; ?>;
-          }
+				if ( ! empty( $header_color ) ) : ?>
+        .site-header,
+        .site-header a,
+        .site-header .menu-toggle,
+        .main-navigation .menu > li > a,
+        .main-navigation .dropdown.menu a,
+        .social-navigation .menu > li > a {
+          color: <?php echo $header_color; ?>;
+        }
+
+        .site-header .site-title {
+          background-color: <?php echo $header_color; ?>;
+        }
         <?php endif;
 
-        if ( isset( $anchor_color ) ) : ?>
+				if ( ! empty( $anchor_color ) ) : ?>
 				a,
 				.button.hollow,
 				.button.hollow.disabled,
@@ -303,9 +307,9 @@ if ( ! class_exists( 'GT_Customizer' ) ) {
 				.post-password-form [type="submit"][disabled]:focus {
 					background-color: <?php echo $anchor_color; ?>;
 				}
-				<?php endif;
+        <?php endif;
 
-				if ( isset( $anchor_hover_color ) ) : ?>
+				if ( ! empty( $anchor_hover_color ) ) : ?>
 				a:hover,
 				a:focus,
 				.social-navigation .menu > li > a:hover,
@@ -329,7 +333,7 @@ if ( ! class_exists( 'GT_Customizer' ) ) {
 	}
 
 	// Setup the Theme Customizer settings and controls.
-//	add_action( 'customize_register', array( 'GT_Customizer', 'register' ) );
+	add_action( 'customize_register', array( 'GT_Customizer', 'register' ) );
 
 	add_action( 'wp_head', 'GT_Customizer::customize_css' );
 

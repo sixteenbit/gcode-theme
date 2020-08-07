@@ -233,7 +233,8 @@ if ( ! class_exists( 'GT_Theme_Setup' ) ) {
 					'gcode-theme-motion-ui',
 					'gcode-theme-fontawesome',
 					'gcode-theme-foundation',
-				)
+				),
+				GT_THEME_VERSION
 			);
 
 			wp_style_add_data( 'gcode-theme-styles', 'rtl', 'replace' );
