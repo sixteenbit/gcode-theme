@@ -45,11 +45,11 @@ msgstr ""
 msgid "Copyright &copy; %s. All rights reserved."
 msgstr ""
 
-#: footer.php:35, header.php:79
+#: footer.php:35, header.php:81
 msgid "Social Links Menu"
 msgstr ""
 
-#: header.php:34
+#: header.php:75
 msgid "Main navigation toggle"
 msgstr ""
 

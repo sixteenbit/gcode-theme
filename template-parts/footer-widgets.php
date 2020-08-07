@@ -13,25 +13,25 @@ if ( $has_footer_1 || $has_footer_2 || $has_footer_3 || $has_footer_4 ) { ?>
 	  <div class="grid-x grid-padding-x">
 
 		<?php if ( $has_footer_1 ) { ?>
-		  <div class="cell auto">
+		  <div class="cell small-12 auto">
 			<?php dynamic_sidebar( 'footer-1' ); ?>
 		  </div>
 		<?php } ?>
 
 		<?php if ( $has_footer_2 ) { ?>
-		  <div class="cell auto">
+		  <div class="cell small-12 auto">
 			<?php dynamic_sidebar( 'footer-2' ); ?>
 		  </div>
 		<?php } ?>
 
 		<?php if ( $has_footer_3 ) { ?>
-		  <div class="cell auto">
+		  <div class="cell small-12 auto">
 			<?php dynamic_sidebar( 'footer-3' ); ?>
 		  </div>
 		<?php } ?>
 
 		<?php if ( $has_footer_4 ) { ?>
-		  <div class="cell auto">
+		  <div class="cell small-12 auto">
 			<?php dynamic_sidebar( 'footer-4' ); ?>
 		  </div>
 		<?php } ?>
