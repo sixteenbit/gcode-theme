@@ -45,11 +45,11 @@ msgstr ""
 msgid "Copyright &copy; %s. All rights reserved."
 msgstr ""
 
-#: footer.php:35, header.php:79
+#: footer.php:35, header.php:81
 msgid "Social Links Menu"
 msgstr ""
 
-#: header.php:34
+#: header.php:75
 msgid "Main navigation toggle"
 msgstr ""
 
@@ -238,7 +238,7 @@ msgstr ""
 msgid "Footer #4"
 msgstr ""
 
-#: classes/class-theme-setup.php:374
+#: classes/class-theme-setup.php:375
 msgid "Skip to the content"
 msgstr ""
 

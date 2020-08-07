@@ -66,7 +66,7 @@
 					?>
 				</div><!-- .cell -->
 
-        <?php get_sidebar(); ?>
+		<?php get_sidebar(); ?>
 			</div><!-- .grid-x -->
 		</div><!-- .grid-container -->
 	</div><!-- .entry-content -->

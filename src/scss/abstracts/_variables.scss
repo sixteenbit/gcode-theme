@@ -4,8 +4,6 @@
 // @link src/scss/vendors/foundation/_settings.scss
 // -----------------------------------------------------------------------------
 
-$body-font-color: #212529;
-
 $foundation-palette: (
   primary: #fa6831,
   secondary: #767676,
@@ -16,6 +14,11 @@ $foundation-palette: (
 
 @include add-foundation-colors;
 
+$body-font-color: #212529;
+$body-font-family: 'Mulish', sans-serif;
+$header-font-family: 'Mulish', sans-serif;
+$header-font-weight: 700;
+
 $anchor-color: $primary-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 
@@ -25,3 +28,6 @@ $button-background-hover: scale-color($button-background, $lightness: -15%);
 $dropdownmenu-arrow-color: $body-font-color;
 
 $pagination-item-background-current: $primary-color;
+
+$offcanvas-background: $white;
+$accordionmenu-arrow-color: $primary-color;

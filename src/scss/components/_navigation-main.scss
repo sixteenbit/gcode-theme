@@ -35,13 +35,13 @@ $main-link-color: #2a2a2a !default;
 .off-canvas {
   .menu {
     a {
-      font-size: rem-calc(20);
+      font-size: rem-calc(18);
       font-weight: 700;
       line-height: 1.8;
-      color: $white;
+      color: $body-font-color;
 
       @include on-event() {
-        opacity: 0.6;
+        color: $anchor-color;
       }
     }
   }

@@ -6,7 +6,7 @@
  */
 
 // Defines
-define( 'GT_THEME_VERSION', '0.1.0' );
+define( 'GT_THEME_VERSION', '0.1.2' );
 define( 'GT_THEME_DIR', get_template_directory() );
 define( 'GT_THEME_URL', get_template_directory_uri() );
 
@@ -15,9 +15,9 @@ define( 'GT_THEME_URL', get_template_directory_uri() );
  */
 require 'update-checker/plugin-update-checker.php';
 $NTUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-  'https://updates.sixteenbit.com/updates/?action=get_metadata&slug=gcode-theme',
-  __FILE__,
-  'gcode-theme'
+	'https://updates.sixteenbit.com/updates/?action=get_metadata&slug=gcode-theme',
+	__FILE__,
+	'gcode-theme'
 );
 
 /**
