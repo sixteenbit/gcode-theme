@@ -11,6 +11,7 @@ if ( ! class_exists( 'GT_Customizer' ) ) {
 		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
 		 */
 		public static function register( $wp_customize ) {
+
 			$priority = 10;
 
 			// Section: Colors

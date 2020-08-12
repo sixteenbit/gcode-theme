@@ -89,55 +89,55 @@ msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: classes/class-customizer.php:35
+#: classes/class-customizer.php:36
 msgid "Text Color"
 msgstr ""
 
-#: classes/class-customizer.php:36
+#: classes/class-customizer.php:37
 msgid "Select the color to be used for the body text color."
 msgstr ""
 
-#: classes/class-customizer.php:58
+#: classes/class-customizer.php:59
 msgid "Header Background"
 msgstr ""
 
-#: classes/class-customizer.php:59
+#: classes/class-customizer.php:60
 msgid "Select the background color to be used for the header."
 msgstr ""
 
-#: classes/class-customizer.php:81
+#: classes/class-customizer.php:82
 msgid "Header Color"
 msgstr ""
 
-#: classes/class-customizer.php:82
+#: classes/class-customizer.php:83
 msgid "Select the color to be used for the header menu items."
 msgstr ""
 
-#: classes/class-customizer.php:104
+#: classes/class-customizer.php:105
 msgid "Anchor Color"
 msgstr ""
 
-#: classes/class-customizer.php:105
+#: classes/class-customizer.php:106
 msgid "Select the color to be used for hyperlink color."
 msgstr ""
 
-#: classes/class-customizer.php:127
+#: classes/class-customizer.php:128
 msgid "Anchor Hover Color"
 msgstr ""
 
-#: classes/class-customizer.php:128
+#: classes/class-customizer.php:129
 msgid "Select the color to be used for hyperlink hover color."
 msgstr ""
 
-#: classes/class-customizer.php:137
+#: classes/class-customizer.php:138
 msgid "Theme Options"
 msgstr ""
 
-#: classes/class-customizer.php:155
+#: classes/class-customizer.php:156
 msgid "Force Login"
 msgstr ""
 
-#: classes/class-customizer.php:156
+#: classes/class-customizer.php:157
 msgid "Make the website private until it's ready to share publicly, or keep it private for members only."
 msgstr ""
 
