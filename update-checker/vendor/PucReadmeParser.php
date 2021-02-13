@@ -52,6 +52,12 @@ class PucReadmeParser {
 		else
 			$tested_up_to = NULL;
 
+		// Requires PHP: 5.2.4
+		if ( preg_match('|Requires PHP:(.*)|i', $file_contents, $_requires_php) ) {
+			$requires_php = $this->sanitize_text( $_requires_php[1] );
+		} else {
+			$requires_php = null;
+		}
 
 		// Stable tag: 10.4-ride-the-fire-eagle-danger-day
 		if ( preg_match('|Stable tag:(.*)|i', $file_contents, $_stable_tag) )
@@ -196,6 +202,7 @@ class PucReadmeParser {
 			'tags' => $tags,
 			'requires_at_least' => $requires_at_least,
 			'tested_up_to' => $tested_up_to,
+			'requires_php' => $requires_php,
 			'stable_tag' => $stable_tag,
 			'contributors' => $contributors,
 			'donate_link' => $donate_link,
@@ -310,7 +317,7 @@ class PucReadmeParser {
 			return encodeit( $matches );
 
 		$text = trim($matches[2]);
-		$text = htmlspecialchars($text, EGT_QUOTES);
+		$text = htmlspecialchars($text, ENT_QUOTES);
 		$text = str_replace(array("\r\n", "\r"), "\n", $text);
 		$text = preg_replace("|\n\n\n+|", "\n\n", $text);
 		$text = str_replace('&amp;lt;', '&lt;', $text);
