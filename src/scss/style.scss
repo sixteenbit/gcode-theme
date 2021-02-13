@@ -4,7 +4,7 @@ Theme URI: http://github.com/sixteenbit/gcode-theme
 Author: Sixteenbit
 Author URI: https://sixteenbit.com
 Description: Custom theme: GCODE, developed by Sixteenbit.
-Version: 0.1.2
+Version: 0.2.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: gcode-theme
@@ -34,6 +34,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import 'components/alignments';
 @import 'components/comments';
 @import 'components/media';
+@import 'components/galleries';
 @import 'components/navigation-main';
 @import 'components/navigation-social';
 @import 'components/footer-widgets';

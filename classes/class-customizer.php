@@ -11,6 +11,7 @@ if ( ! class_exists( 'GT_Customizer' ) ) {
 		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
 		 */
 		public static function register( $wp_customize ) {
+
 			$priority = 10;
 
 			// Section: Colors
@@ -265,7 +266,14 @@ if ( ! class_exists( 'GT_Customizer' ) ) {
 				.button-group.clear .button.disabled:hover,
 				.button-group.clear .button[disabled]:hover,
 				.button-group.clear .button.disabled:focus,
-				.button-group.clear .button[disabled]:focus {
+				.button-group.clear .button[disabled]:focus,
+        .pagination .current,
+        .blog h2.entry-title > a:hover,
+        .blog h2.entry-title > a:active,
+        .blog h2.entry-title > a:focus,
+        .archive h2.entry-title > a:hover,
+        .archive h2.entry-title > a:active,
+        .archive h2.entry-title > a:focus {
 					color: <?php echo $anchor_color; ?>;
 				}
 
@@ -314,7 +322,10 @@ if ( ! class_exists( 'GT_Customizer' ) ) {
 				a:focus,
 				.social-navigation .menu > li > a:hover,
 				.social-navigation .menu > li > a:active,
-				.social-navigation .menu > li > a:focus {
+				.social-navigation .menu > li > a:focus,
+        .main-navigation .dropdown.menu a:hover,
+        .main-navigation .dropdown.menu a:active,
+        .main-navigation .dropdown.menu a:focus {
 					color: <?php echo $anchor_hover_color; ?>;
 				}
 
